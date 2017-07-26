@@ -1,0 +1,302 @@
+<div class=' cadUser col-sm-12 col-md-12'>
+
+   <label>Informações do usuário</label>
+   <div class=' cadUser row'>
+  	<input type='text' style='display:none;' id='userId'>
+  	<input type='text' style='display:none;' id='userEnderecoId'>
+  	<input type='text' style='display:none;' id='escolaId'>
+  	<input type='text' style='display:none;' id='escolaEnderecoId'>
+	</div>	
+      
+      <div class=' cadUser col-sm-6 col-md-6'>
+      <div class=" cadUser row">
+         <div class=' cadUser input-group'>
+            <span class=' cadUser input-group-addon ' id='basic-addon1'>Nome</span>
+            <input type='text' class=' cadUser form-control '  title='Nome' placeholder='Nome' aria-describedby='basic-addon1' id='nome'>
+         </div>
+      </div>
+	<div class=" cadUser row">
+         <div class=' cadUser input-group'>
+            <span class=' cadUser input-group-addon' id='basic-addon1'>Sobrenome</span>
+            <input type='text' class=' cadUser form-control ' title='Sobrenome' placeholder='Sobrenome' aria-describedby='basic-addon1' id='sobrenome'>
+         </div>
+      </div>
+	
+   <div class=' cadUser row'>
+         <div class=' cadUser input-group'>
+            <span class=' cadUser input-group-addon' id='basic-addon1'>CPF</span>
+            <input type='text' class=' cadUser form-control cpf ' title='CPF' placeholder='CPF' aria-describedby='basic-addon1' id='cpf'>
+         </div>
+     </div>
+     <div class=" cadUser row">
+         <div class=' cadUser input-group'>
+            <span class=' cadUser input-group-addon' id='basic-addon1'>RG</span>
+            <input type='text' class=' cadUser form-control rg ' title='RG' placeholder='RG' aria-describedby='basic-addon1' id='rg'>
+         </div>
+      </div>
+      <div class=' cadUser row'>
+     	<div class=' cadUser input-group date datepicker-br' data-provide='datepicker' id='datepicker'>
+		    <input type='text' class=' cadUser form-control data-br' placeholder="Data de nascimento" id='nascimento'>
+		    <div class=' cadUser input-group-addon '>
+        		<span class=' cadUser glyphicon glyphicon-th'></span>
+    	</div>
+	</div>
+	</div>
+     
+   
+   <div class=' cadUser row'>
+
+         <div class=' cadUser input-group'>
+            <span class=' cadUser input-group-addon' id='basic-addon1'>Grupo sanguineo</span>
+            <input type='text' class=' cadUser form-control ' title='Grupo Sanguíneo]' placeholder='Grupo sanguineo' aria-describedby='basic-addon1' id='tSangue'>
+         </div>
+
+      </div>
+      <div class=' cadUser row'>
+         <div class=' cadUser input-group'>
+            <span class=' cadUser input-group-addon' id='basic-addon1'>Genero</span>
+            <input type='text' class=' cadUser form-control ' title='Genero' placeholder='M/F' aria-describedby='basic-addon1' id='genero'>
+         </div>
+      </div>
+      <div class=' cadUser row'>
+         <div class=' cadUser input-group'>
+            <span class=' cadUser input-group-addon' id='basic-addon1'>Profissão</span>
+            <input type='text' class=' cadUser form-control ' title='Profissão' placeholder='Profissao' aria-describedby='basic-addon1' id='profissao'>
+         </div>
+      </div>
+   
+   		<div class=' cadUser row'>
+         <div class=' cadUser input-group'>
+            <span class=' cadUser input-group-addon' id='basic-addon1'>Telefone</span>
+            <input type='text' class=' cadUser form-control telefone ' title='Telefone residencial' placeholder='Telefone residencial' aria-describedby='basic-addon1' id='telefone'>
+         </div>
+      </div>
+      <div class=' cadUser row'>
+         <div class=' cadUser input-group'>
+            <span class=' cadUser input-group-addon' id='basic-addon1'>Celular</span>
+            <input type='text' class=' cadUser form-control celular ' title='Telefone celular' placeholder='Telefone celular' aria-describedby='basic-addon1' id='celular'>
+         </div>
+      </div>
+      <div class=' cadUser row'>
+         <div class=' cadUser input-group'>
+            <span class=' cadUser input-group-addon' id='basic-addon1'>Contato</span>
+            <input type='text' class=' cadUser form-control celular ' title='Telefone de contato para recados' placeholder='Outro contato' aria-describedby='basic-addon1' id='contato'>
+         </div>
+      </div>
+      <div class=' cadUser row'>
+         <div class=' cadUser input-group'>
+            <span class=' cadUser input-group-addon' id='basic-addon1'>Email</span>
+            <input type='email' class=' cadUser form-control ' title='Email' placeholder='Email' aria-describedby='basic-addon1' id='email'>
+         </div>
+      </div>
+
+  
+     
+   </div>
+   
+  <div class=' cadUser col-sm-6 col-md-6'>
+   <div class=' cadUser row'>
+         <div class=' cadUser input-group'>
+            <span class=' cadUser input-group-addon' id='basic-addon1'>Usuario</span>
+            <input type='text' class=' cadUser form-control ' title='Usuário' placeholder='Usuario' aria-describedby='basic-addon1' id='sysuser'>
+         </div>
+      </div>
+      <div class=' cadUser row'>
+         <div class=' cadUser input-group'>
+            <span class=' cadUser input-group-addon' id='basic-addon1'>Senha</span>
+            <input type='password' class=' cadUser form-control ' title='Senha' placeholder='Senha' aria-describedby='basic-addon1' id='senha'>
+         </div>
+      </div>
+      <div class=' cadUser row'>
+         <div class=' cadUser input-group'>
+            <span class=' cadUser input-group-addon' id='basic-addon1'>Senha</span>
+            <input type='password' class=' cadUser form-control ' title='Confirmação de senha' placeholder='Confirmação de senha' aria-describedby='basic-addon1' id='cSenha'>
+         </div>
+      </div>
+   <div class=' cadUser row'>
+   
+            <div class="cadUser dropdown">
+  				<button class=" cadUser btn btn-default dropdown" type="button" id="tipoConta" style="width: 200px" data-toggle="dropdown">Tipo de conta
+  				</button>
+  				<ul class="cadUser dropdown-menu" id="tipoContaLista">
+    				<li><a>Aluno</a></li>
+    				<li><a>Professor</a></li>
+    				<li><a>Administrador</a></li>
+				</ul>		
+		<input type='text' class=' cadUser form-control 'aria-describedby='basic-addon1' id='conta' style="display: none">
+      </div> 
+    	<!-- <div class=' cadUser input-group'>
+            <span class=' cadUser input-group-addon' id='basic-addon1'>Conta</span>
+            <input type='text' class=' cadUser form-control ' title='Tipo de conta' placeholder='Tipo de conta' aria-describedby='basic-addon1' id='conta'>
+         </div>-->
+      </div> 
+	<div class=" cadUser row">
+   <div class=' cadUser input-group'>
+      <span class=' cadUser input-group-addon' id='basic-addon1'>Observação</span>
+      <input type='text' class=' cadUser form-control ' title='Descrição' placeholder='Observações sobre o aluno' aria-describedby='basic-addon1' id='descricao'>
+   </div>
+   </div>
+   <div class=' cadUser cadform' id='endform'>
+      <label>Endereço</label>
+      <div class=' cadUser row'>
+            <div class=' cadUser input-group'>
+               <span class=' cadUser input-group-addon' id='basic-addon1'>CEP</span>
+               <input type='text' class=' cadUser form-control cep-semform ' placeholder='CEP' aria-describedby='basic-addon1' id='cep'>
+            </div>
+         </div>
+        
+        <!--    <div class=' cadUser row'>
+          <div class=' cadUser input-group'>
+               <span class=' cadUser input-group-addon' id='basic-addon1'>Logradouro</span>
+               <input type='text' class=' cadUser form-control ' placeholder='Tipo de logradouro' aria-describedby='basic-addon1' id='tlogradouro'>
+            </div>
+         </div> -->
+		
+         <div class=' cadUser row'>
+            <div class=' cadUser input-group'>
+               <span class=' cadUser input-group-addon' id='basic-addon1'>Logradouro</span>
+               <input type='text' class=' cadUser form-control ' placeholder='Nome' aria-describedby='basic-addon1' id='nlogradouro'>
+            </div>
+         </div>
+         <div class=' cadUser row'>
+            <div class=' cadUser input-group'>
+               <span class=' cadUser input-group-addon' id='basic-addon1'>Número</span>
+               <input type='text' class=' cadUser form-control numero ' placeholder='Número' aria-describedby='basic-addon1' id='numero'>
+            </div>
+         </div>
+
+      <div class=' cadUser row'>
+            <div class=' cadUser input-group'>
+               <span class=' cadUser input-group-addon' id='basic-addon1'>Bairro</span>
+               <input type='text' class=' cadUser form-control ' placeholder='Bairro' aria-describedby='basic-addon1' id='bairro'>
+            </div>
+         </div>
+         <div class=' cadUser row'>
+            <div class=' cadUser input-group'>
+               <span class=' cadUser input-group-addon' id='basic-addon1'>Cidade</span>
+               <input type='text' class=' cadUser form-control ' placeholder='Cidade' aria-describedby='basic-addon1' id='cidade'>
+            </div>
+         </div>
+         <div class=' cadUser row'>
+            <div class=' cadUser input-group'>
+               <span class=' cadUser input-group-addon' id='basic-addon1'>UF</span>
+               <input type='text' class=' cadUser form-control ' placeholder='UF' aria-describedby='basic-addon1' id='nUF'>
+            </div>
+         </div>
+          <div class=' cadUser row'>
+            <div class=' cadUser input-group'>
+               <span class=' cadUser input-group-addon' id='basic-addon1'>Referencia</span>
+               <input type='text' class=' cadUser form-control ' placeholder='Referencia' aria-describedby='basic-addon1' id='referencia'>
+            </div>
+         </div>
+   </div>
+   </div>
+   
+  
+<div class=" cadUser col-sm-12 col-md-12 cadform">
+   <form id='escform'> 
+<div class=" cadUser col-sm-6 col-md-6">
+<label>Informações da escola</label>
+   <div class=' cadUser row'>
+         <div class=' cadUser input-group'>
+            <span class=' cadUser input-group-addon' id='basic-addon1'>Nome</span>
+            <input type='text' class=' cadUser form-control ' placeholder='nome' aria-describedby='basic-addon1' id='escolanome'>
+         </div>
+      </div>
+      <div class=' cadUser row'>
+         <div class=' cadUser input-group'>
+            <span class=' cadUser input-group-addon' id='basic-addon1'>Responsável</span>
+            <input type='text' class=' cadUser form-control ' placeholder='Responsável' aria-describedby='basic-addon1' id='escolaresponsavel'>
+         </div>
+      </div>
+
+   <div class=' cadUser row'>
+         <div class=' cadUser input-group'>
+            <span class=' cadUser input-group-addon' id='basic-addon1'>Telefone</span>
+            <input type='text' class=' cadUser form-control telefone ' placeholder='telefone' aria-describedby='basic-addon1' id='escolatelefone'>
+         </div>
+      </div>
+      <div class=' cadUser row'>
+         <div class=' cadUser input-group'>
+            <span class=' cadUser input-group-addon' id='basic-addon1'>Email</span>
+            <input type='text' class=' cadUser form-control ' placeholder='Email' aria-describedby='basic-addon1' id='escolaemail'>
+         </div>
+      </div>
+
+   <div class=' cadUser cadform' id='endescolaform'>
+      <label>Endereço</label>
+      <div class=' cadUser row'>
+            <div class=' cadUser input-group'>
+               <span class=' cadUser input-group-addon' id='basic-addon1'>CEP</span>
+               <input type='text' class=' cadUser form-control cep-semform ' placeholder='CEP' aria-describedby='basic-addon1' id='escolacep'>
+            </div>
+         </div>
+         <!-- <div class=' cadUser row'>
+            <div class=' cadUser input-group'>
+               <span class=' cadUser input-group-addon' id='basic-addon1'>Logradouro</span>
+               <input type='text' class=' cadUser form-control ' placeholder='Tipo de logradouro' aria-describedby='basic-addon1' id='escolatlogradouro'>
+            </div>
+         </div>-->
+         </div>
+         <div class=' cadUser row'>
+            <div class=' cadUser input-group'>
+               <span class=' cadUser input-group-addon' id='basic-addon1'>Logradouro</span>
+               <input type='text' class=' cadUser form-control ' placeholder='Nome' aria-describedby='basic-addon1' id='escolanlogradouro'>
+            </div>
+         </div>
+         </div>
+<div class=" cadUser col-sm-6 col-md-6">
+         <div class=' cadUser row'>
+            <div class=' cadUser input-group'>
+               <span class=' cadUser input-group-addon' id='basic-addon1'>Número</span>
+               <input type='text' class=' cadUser form-control numero ' placeholder='Número' aria-describedby='basic-addon1' id='escolanumero'>
+            </div>
+         </div>
+
+      <div class=' cadUser row'>
+            <div class=' cadUser input-group'>
+               <span class=' cadUser input-group-addon' id='basic-addon1'>Bairro</span>
+               <input type='text' class=' cadUser form-control ' placeholder='Bairro' aria-describedby='basic-addon1' id='escolabairro'>
+            </div>
+         </div>
+         <div class=' cadUser row'>
+            <div class=' cadUser input-group'>
+               <span class=' cadUser input-group-addon' id='basic-addon1'>Cidade</span>
+               <input type='text' class=' cadUser form-control ' placeholder='Cidade' aria-describedby='basic-addon1' id='escolacidade'>
+            </div>
+         </div>
+        <!--  <div class=' cadUser row'>
+            <div class=' cadUser input-group'>
+               <span class=' cadUser input-group-addon' id='basic-addon1'>UF</span>
+               <input type='text' class=' cadUser form-control ' placeholder='Sigla UF' aria-describedby='basic-addon1' id='escolasUF'>
+            </div>
+         </div>  -->
+         <div class=' cadUser row'>
+            <div class=' cadUser input-group'>
+               <span class=' cadUser input-group-addon' id='basic-addon1'>UF</span>
+               <input type='text' class=' cadUser form-control ' placeholder='UF' aria-describedby='basic-addon1' id='escolanUF'>
+            </div>
+         </div>
+         <div class=' cadUser row'>
+            <div class=' cadUser input-group'>
+               <span class=' cadUser input-group-addon' id='basic-addon1'>Referencia</span>
+               <input type='text' class=' cadUser form-control ' placeholder='Referencia' aria-describedby='basic-addon1' id='escolareferencia'>
+            </div>
+         </div>
+         
+
+   </div> 
+   </form>
+   </div>
+
+<div class='btFormActions'>
+   <button type='button' class='btn btn-default slider' id='btAdicionarEscola'>Escola</button>
+   <button type='button' class='btn btn-success' id ='btAdicionarUsuario' onclick='javascript: adicionarUsuario()'>Adicionar Usuario</button>
+   <button type='button' class='btn btn-success' id='btEditarUsuario' onclick='javascript: editarUsuario()' style='display:none;'>Salvar</button>
+   <button type='button' class='btn btn-danger slider' id='btExcluirUsuario' onclick='javascript: excluirUsuario()'style='display:none;' >Excluir</button>
+</div>
+</div>
+<script type='text/javascript' src='../scripts/alertas.js'></script>
+<script type='text/javascript' src='../scripts/defaults.js'></script>
+<script type='text/javascript' src='../scripts/usuario.js'></script>
+<script type='text/javascript' src='../scripts/usuarioForms.js'></script>

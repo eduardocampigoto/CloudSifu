@@ -1,0 +1,234 @@
+body{
+	margin: 0px auto;
+	background-color: 	#DDDDDD;
+	z-index: 0;
+}
+.logo{
+	background-image: url("../images/transparentLogo.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 230px;
+	size: 100%;
+	
+}
+
+#loginBarId{
+	margin-top: -50px;
+}
+
+.carroselImg{
+	margin-bottom: 300px;
+	size: auto;
+	height: 100%;
+	width: 100%;
+	background-position: center !important ;
+}
+
+#carrosel{
+		min-heiht: 200px;
+		max-height: 500px;
+		margin-top: -44px;
+		size: auto;
+		overflow: hidden;
+}
+
+a{
+	cursor:	pointer;
+}
+
+.destaque{
+	font-weight: bold;
+}
+
+.custom-date-btn{
+	margin-top: 6px;
+	border-radius: 100px !important;
+
+}
+
+.black-btn{
+	background-color: #222222 !important;
+	color: #FFFFFF !important;
+	border-color: #222222 !important;
+}
+
+#campoBuscaId{
+	margin-top: 4px;
+}
+
+.btForm{
+	height: 34px;
+	width : 134px;
+}
+
+.alertBar{
+	z-index: 999;
+	position: relative;
+	margin-top: 10px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.defModal{
+	z-index: 99;
+	width: auto;
+	min-width: 300px;
+	height: auto;
+	min-height: 100px;
+	border-radius: 8px;
+	text-align: center;
+	vertical-align: center;
+}
+
+.alertConfig{
+	background-color: #ffff51;
+	color: #000;
+}
+
+.resultBusca{
+  cursor: pointer;
+  width : 350px;
+  z-index: 9999;
+}
+
+#buscaLista{
+  cursor: pointer;
+  width : 350px;
+  z-index: 9999;
+}
+
+
+.container-fluid{
+	margin-top: 0px !important;
+}
+
+.btn{
+	margin: 5px !important;
+}
+
+.topBar{
+	z-index: 0;
+	margin-top: 0px;
+	margin-left: 10px;
+	min-height: 70px;
+	padding-top: 10px;
+	padding-right: 10px;
+	height: auto;
+	width:  auto;
+}
+
+.navbar{
+	margin-top: -10px	!important;
+	margin-left: -10px	!important;
+	margin-right: -10px	!important;
+}
+
+.navbar navbar-inverse{
+	 box-shadow:			0px 0px 20px 0px	#000000;
+	-moz-box-shadow:		0px 0px 20px 0px	#000000;
+	-webkit-box-shadow:		0px 0px 20px 0px	#000000;
+}
+
+.centerBar{
+	margin-top: 40px;
+}
+
+.bottomBar{
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 50px;
+	width:  auto;
+	background-color: #F0F0F0;
+	position: absolute;
+}
+
+.loginForm{
+  float: right;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+#descricaoId{
+	height: auto;
+	width: auto;
+	margin: 0px;
+	min-height: 250px;
+	min-width: 220px;
+
+}
+
+.loginInput{
+  //margin-right: 10px;
+  text-align: center;
+  height: 20px;
+  width: auto;
+  border-radius: 8px;
+  outline: none;
+}
+
+.loginInput:hover{
+  //margin-right: 10px;
+  text-align: center;
+  width: auto;
+  height: 20px;
+  border-radius: 8px;
+  outline: none;
+  margin-right: 5px;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.input-group{
+	margin: 4px;
+}
+
+.form-group{
+	//margin: 4px;
+}
+
+input:focus{
+	background-color : #FFFFFF;
+}
+
+#escform{
+	margin: 5px;
+	border: none;
+	border-top: 2px solid #F1F1F1;
+	display: none;
+}
+
+
+.slider {
+	overflow-y: hidden;
+	max-height: 500px; 
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.slider.closed {
+	max-height: 0;
+}
+
+#userinfoform{
+    padding: 5px;
+	border: 2px solid #F1F1F1;
+	border-radius : 8px;
+}
+
+
+.btFormActions{
+	float: right;
+	margin: 4px;
+}
+
+.form-control .cadUser: focus{
+	background-color: #FFFFFF;
+}
+
+#saudacao{
+	text-size: 50px;
+	font-style: normal;
+	font-family: "Sans-serif", "Arial", "Verdana";
+}

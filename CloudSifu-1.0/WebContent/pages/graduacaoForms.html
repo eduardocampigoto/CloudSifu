@@ -1,0 +1,66 @@
+<input type='text' style='display:none;' id='id'>
+<div class='col-sm-12 col-md-12'>
+
+<div class='row'>
+<label>Dados da graduacao</label></div>
+</div>
+<div class='col-sm-6 col-md-6'>
+ <div class='row'>
+            <div class='input-group'>
+               <span class='input-group-addon ' id='basic-addon1'>Nome</span>
+               <input type='text' class='form-control ' name='nome' title='nome' placeholder='Nome' aria-describedby='basic-addon1' id='nome'>
+            </div>
+         </div>      
+</div>
+
+<div class='col-sm-6 col-md-6'>
+   <div class='row'>
+            <div class='form-group'>
+               <!-- <label for='descricaoId'>Descrição:</label> -->
+               <textarea class='form-control' rows='5' id='descricao' name='descricao'  placeholder='Descrição'></textarea>
+          </div>
+   </div>
+</div>
+
+
+ <div class='col-sm-12 col-md-12'>
+     <div class='row' id='btRow'>
+       <div class='col-sm-6 col-md-6'></div>
+		   <div class='col-sm-2 col-md-2'>
+		    	<button type='button' class='btn btForm btn-warning' id='btEditarGraduacao' onclick='javascript: editarGraduacao()' style='display:none;'>Salvar</button>
+		    </div>   
+		    <div class='col-sm-2 col-md-2'>   	
+		    	<button type='button' class='btn btForm btn-danger slider' id='btExcluirGraduacao' onclick='' style='display:none;' >Excluir</button>
+		    </div>
+		    <div class='col-sm-2 col-md-2'>
+		    	<button type='button' class='btn btForm btn-success ' id ='btAdicionarGraduacao' onclick='javascript: adicionarGraduacao()'>Adicionar</button>   	
+		   		<button type='button' class='btn btForm btn-default' id='btCancelar' onclick='javascript: carregarPagina("pages/graduacaoForms.html")' style='display:none;'>Cancelar</button>				
+			</div>
+	</div>
+</div>
+
+
+
+
+<div class='col-sm-12 col-md-12'>
+  <h2>Graduacoes cadastradas</h2>
+  <p></p>            
+  <table class="table table-hover">
+    <thead>
+      <tr>
+      	<th>ID</th>
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id='listaGraduacoes'>
+     
+    </tbody>
+  </table>
+</div>
+
+
+<script type='text/javascript' src='../scripts/graduacao.js'></script>
+<script type='text/javascript' src='../scripts/graduacaoForms.js'></script>
+

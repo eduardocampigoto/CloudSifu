@@ -1,0 +1,71 @@
+<div class='col-sm-12 col-md-12'>
+		  <input class="form-control dropdown-toggle" id="estiloGraduacaoUsuarioId" type="text" style="display: none">
+		  
+
+<div class='col-sm-3 col-md-3'>
+	 <div class="dropdown">
+	    <input class="form-control dropdown-toggle" placeholder="Buscar usuário" name="usuario" id="buscaUsuario" data-toggle="dropdown" type="text">
+	    <ul class="dropdown-menu" role="menu" id="seletorUsuario" aria-labelledby="menu1">  
+	    </ul>
+	  	</div>
+	</div>   
+
+   <div class='col-sm-2 col-md-2'>
+      <div class="dropdown">
+		  <input class="form-control dropdown-toggle" placeholder="Buscar Estilo" name="estilos" id="buscaEstilo" data-toggle="dropdown" type="text">
+		  <ul class="dropdown-menu" role="menu" id="seletorEstilo" aria-labelledby="menu1">		  
+		  </ul>
+	  </div>  
+	</div>
+	
+	<div class='col-sm-3 col-md-3'>
+	  <div class="dropdown">
+	    <input class="form-control dropdown-toggle" placeholder="Buscar graduação" name="graduacao" id="buscaGraduacao" data-toggle="dropdown" type="text">
+	    <ul class="dropdown-menu" role="menu" id="seletorGraduacao" aria-labelledby="menu1">  
+	    </ul>
+	  	</div>
+	</div>    
+	
+	<div class='col-sm-3 col-md-3'>
+	  	<div class='input-group date datepicker-br' data-provide='datepicker' id='datepicker'>
+		    <input type='text' class='form-control data-br' id='dataGraduacao'>
+		    <div class='input-group-addon '>
+        		<span class='glyphicon glyphicon-th'></span>
+        		</div>
+    	</div>
+     </div>    		
+         
+   	<div class='col-sm-1 col-md-1 text-center'>
+	    <button type='button' class='btn btn-success' id ='btAdicionarGraduacao' onclick='adicionarGraduacaoEstilo()' disabled>Adicionar</button>
+    </div>
+</div>
+	
+
+<div class='col-sm-12 col-md-12 estiloDescricao' style="background-color:#C0C0C0">
+<div class ="col-sm-3 col-md-3" id="dadosEstilo" style="display: none">Dados do usuário selecionado:</div>
+<div class="col-sm-3 col-md-3" id="idEstilo"></div>
+<div class="col-sm-3 col-md-3" id="nomeEstilo"></div>
+<div class="col-sm-3 col-md-3" id="descricaoEstilo"></div>
+</div>
+<div class='col-sm-12 col-md-12'>
+  <p id="tabDescEstilo">Graduacao</p>         
+   
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>Nome</th>
+        <th>Estilo</th>
+        <th>Graduação</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id='listaGraduacao'>
+     
+    </tbody>
+  </table>
+</div>
+
+<script type='text/javascript' src='../scripts/defaults.js'></script>	
+<script type='text/javascript' src='../scripts/estiloGraduacaoUsuario.js'></script>
+<script type='text/javascript' src='../scripts/estiloGraduacaoUsuarioForms.js'></script>

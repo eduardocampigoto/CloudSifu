@@ -1,0 +1,64 @@
+<input type='text' style='display:none;' id='id'>
+<div class='col-sm-12 col-md-12'>
+
+<div class='row'>
+<label>Dados do estilo</label></div>
+</div>
+<div class='col-sm-6 col-md-6'>
+ <div class='row'>
+            <div class='input-group'>
+               <span class='input-group-addon ' id='basic-addon1'>Título</span>
+               <input type='text' class='form-control ' name='nome' title='nome' placeholder='Nome' aria-describedby='basic-addon1' id='nome'>
+            </div>
+         </div>      
+</div>
+
+<div class='col-sm-6 col-md-6'>
+   <div class='row'>
+            <div class='form-group'>
+               <!-- <label for='descricaoId'>Descrição:</label> -->
+               <textarea class='form-control' rows='5' id='descricao' name='descricao'  placeholder='Descrição'></textarea>
+          </div>
+   </div>
+</div>
+
+
+ <div class='col-sm-12 col-md-12'>
+     <div class='row' id='btRow'>
+     <div class='col-sm-8 col-md-8'></div>
+     <div class='col-sm-2 col-md-2'>
+     <button type='button' class='btn btForm btn-warning' id='btEditarEstilo' onclick='javascript: editarEstilo()' style='display:none;'>Salvar</button>
+     </div>   
+   	 <div class='col-sm-2 col-md-2'>   	
+   	 <button type='button' class='btn btForm btn-default' id='btCancelar' onclick='javascript: carregarPagina("../pages/estiloForms.html")' style='display:none;'>Cancelar</button>
+   	 <button type='button' class='btn btForm btn-success ' id='btSalvarEstilo' onclick='javascript: editarEstilo()' style='display:none;' >Salvar</button> 
+     <button type='button' class='btn btForm btn-success ' id ='btAdicionarEstilo' onclick='javascript: adicionarEstilo()'>Adicionar</button>
+    </div>
+
+</div>
+</div>
+
+
+
+
+<div class='col-sm-12 col-md-12'>
+  <h2>Estilos cadastrados</h2>
+  <p></p>            
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id='listaEstilos'>
+     
+    </tbody>
+  </table>
+</div>
+<script type='text/javascript' src='../scripts/estilo.js'></script>
+<script type='text/javascript' src='../scripts/estiloForms.js'></script>
+
+
+

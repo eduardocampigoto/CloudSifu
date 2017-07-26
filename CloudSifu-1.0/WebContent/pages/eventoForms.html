@@ -1,0 +1,108 @@
+
+   <input type='text' style='display:none;' id='eventoId'>
+   <input type='text' style='display:none;' id='eventoEnderecoId'>
+   <input type='text' style='display:none;' id='bairroId'>
+   <input type='text' style='display:none;' id='cidadeId'>
+   <input type='text' style='display:none;' id='ufId'>
+
+      <div class='col-sm-6 col-md-6'>
+        <label>Informações do evento</label>
+           <div class='row'>
+         <div class='col-sm-6 col-md-6'>
+            <div class='input-group date datepicker-br' data-provide='datepicker' id='datepicker'>
+               <input type='text' class='form-control data-br' name='data' id='data' placeholder='data'>
+               <div class='input-group-addon'>
+                  <span class='glyphicon glyphicon-calendar'></span>
+               </div>
+            </div>
+            </div><div class='col-sm-6 col-md-6'>
+            <div class='input-group time-select-group' data-toggle='popover' data-placement='bottom'  title='Selecione a hora'>
+               <input type='text' class='form-control time-input hora-minuto' name='hora' placeholder='Hora' value='00:00' id='hora' aria-describedby='time-popover'>
+               <span class='input-group-addon time-select-btn'><span class='glyphicon glyphicon-time'></span>
+               </span>
+            </div>
+         </div>
+         </div>
+         <div class='row'>
+            <div class='input-group'>
+               <span class='input-group-addon ' id='basic-addon1'>Título</span>
+               <input type='text' class='form-control ' name='titulo' title='Título' placeholder='Título' aria-describedby='basic-addon1' id='titulo'>
+            </div>
+         </div>
+         <div class='row'>
+            <div class='form-group'>
+               <!-- <label for='descricaoId'>Descrição:</label> -->
+               <textarea class='form-control' rows='5' id='descricao' name='descrição'  placeholder='Descrição'></textarea>
+            </div>
+         </div>
+      </div>
+      <div class='col-sm-6 col-md-6'>
+         <div class='row'>
+            <label>Endereço</label>
+            <div class='input-group'>
+               <span class='input-group-addon' id='basic-addon1'>CEP</span>
+               <input type='text' class='form-control cep-semform' name='CEP' placeholder='CEP' aria-describedby='basic-addon1' id='cep'>
+            </div>
+         </div>
+         <div class='row'>
+            <div class='input-group'>
+               <span class='input-group-addon' id='basic-addon1'>Logradouro</span>
+               <input type='text' class='form-control' name='logradouro' placeholder='Título' aria-describedby='basic-addon1' id='nlogradouro'>
+            </div>
+         </div>
+         <div class='row'>
+            <div class='input-group'>
+               <span class='input-group-addon' id='basic-addon1'>Número</span>
+               <input type='text' class='form-control ' name='número' placeholder='Número' aria-describedby='basic-addon1' id='numero'>
+            </div>
+         </div>
+         <div class='row'>
+            <div class='input-group'>
+               <span class='input-group-addon' id='basic-addon1'>Bairro</span>
+               <input type='text' class='form-control ' name='bairro' placeholder='Bairro' aria-describedby='basic-addon1' id='bairro'>
+            </div>
+         </div>
+         <div class='row'>
+            <div class='input-group'>
+               <span class='input-group-addon' id='basic-addon1'>Cidade</span>
+               <input type='text' class='form-control ' name='cidade' placeholder='Cidade' aria-describedby='basic-addon1' id='cidade'>
+            </div>
+         </div>
+         <div class='row'>
+            <div class='input-group'>
+               <span class='input-group-addon' id='basic-addon1'>UF</span>
+               <input type='text' class='form-control ' name='unidadeFederativa' placeholder='Unidade Federativa' aria-describedby='basic-addon1' id='nUF'>
+            </div>
+         </div>
+         <div class='row'>
+            <div class='input-group'>
+               <span class='input-group-addon' id='basic-addon1'>Referencia</span>
+               <input type='text' class='form-control ' placeholder='referencia' aria-describedby='basic-addon1' id='referencia'>
+            </div>
+         </div>
+      </div>
+     <div class='col-sm-12 col-md-12'>
+     <div class='row' id='btRow'>
+     <div class='col-sm-3 col-md-3'></div>
+      <div class='col-sm-3 col-md-3'>
+
+   	  </div>
+   	<div class='col-sm-3 col-md-3'>
+   	<button type='button' class='btn btForm btn-warning' id='btEditarEvento' onclick='javascript: editarEvento()' style='display:none;'>Salvar</button>
+   	</div>
+   	<div class='col-sm-3 col-md-3'>
+      <button type='button' class='btn btForm btn-success ' id ='btAdicionarEvento' onclick='javascript: adicionarEvento()'>Adicionar Evento</button>
+      <button type='button' class='btn btForm btn-danger slider' id='btExcluirEvento' onclick='javascript: excluirEvento()' style='display:none;' >Excluir</button>
+    </div>
+
+	</div>
+	</div>
+
+
+
+<script type='text/javascript' src='../libs/datepicker/js/bootstrap-datepicker.min.js'></script>
+<script type='text/javascript' src='../libs/datepicker/locales/bootstrap-datepicker.pt-BR.min.js'></script>
+<script type='text/javascript' src='../scripts/defaults.js'></script>
+<script type='text/javascript' src='../scripts/evento.js'></script>
+<script type='text/javascript' src='../scripts/eventoForms.js'></script>
+<!-- <script type='text/javascript' src='../scripts/testeEvento.js'></script>-->

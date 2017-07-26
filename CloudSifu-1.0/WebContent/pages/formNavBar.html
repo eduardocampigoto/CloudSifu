@@ -1,0 +1,92 @@
+<nav class='navbar navbar-inverse' id='barBusca'>
+
+    <div class='container-fluid'>
+        <div class='navbar-header'>
+            <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1' aria-expanded='false'>
+                <span class='sr-only'>Toggle navigation</span> <span class='icon-bar'></span> <span class='icon-bar'></span> <span class='icon-bar'></span>
+            </button>
+            <a class='navbar-brand' href='#'>CloudSifu</a>
+        </div>
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
+           <ul class='nav navbar-nav'>
+           
+           <li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Menu <span class='caret'></span></a>
+                    <ul class='dropdown-menu'>
+                        <li><a  onClick='carregarPagina("usuarioForms.html")'>Formulario usuario</a>
+                        </li>
+                        <li><a  onClick='carregarPagina("eventoForms.html")'>Formulario evento</a>
+                        </li>
+                        <li><a  onClick='carregarPagina("turmaForms.html")'>Formulario turma</a>
+                        </li>
+                        <li><a  onClick='carregarPagina("estiloForms.html")'>Formulario estilo</a>
+                        </li>
+                        <li><a  onClick='carregarPagina("graduacaoForms.html")'>Formulario graduação</a>
+                        </li>
+                        <li><a  onClick='carregarPagina("turmaUsuarioForms.html")'>Usuários e turmas</a>
+                        </li>
+                        <li><a  onClick='carregarPagina("estiloGraduacaoUsuarioForms.html")'> Usuarios e estilos</a>
+                        </li>
+                        <li><a  onClick='carregarPagina("diarioForms.html")'>Diário de classe</a>
+                        </li>
+                        <li role='separator' class='divider'></li>
+                        <li><a onClick='logout()'>Sair</a>
+                        </li>
+                    </ul>
+                </li>
+            <!--     <li class='active'><a href='#'>Adicionar<span class='sr-only'></span></a>
+                </li>
+                <li><a href='?'>Editar</a>
+                </li>
+                <li><a href='-'>Excluir</a>
+                </li>-->
+              <!--  <li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Dropdown <span class='caret'></span></a>
+                    <ul class='dropdown-menu'>
+                        <li><a href='#'>Action</a>
+                        </li>
+                        <li><a href='#'>Another action</a>
+                        </li>
+                        <li><a href='#'>Something else here</a>
+                        </li>
+                        <li role='separator' class='divider'></li>
+                        <li><a href='#'>Separated link</a>
+                        </li>
+                        <li role='separator' class='divider'></li>
+                        <li><a href='#'>One more separated link</a>
+                        </li>
+                    </ul>
+                </li>-->
+            </ul> 
+
+            <form class='navbar-form navbar-left'>
+                <div class='form-group'>
+                    <div class='search' >
+                        <input type='search' name='q' placeholder='Buscar...'  name='campoBusca' class='campoBusca' id='campoBuscaId' autocomplete='off'>
+                        <ul class='search-ac'  id='buscaLista' style="display: none">
+                        <li id='0'><a>Buscar...<span id='buscaAmostra'></span></a></li>
+                        </ul>
+                        </div>
+                	</div>
+               	  <div class="input-group date datepicker-br custom-date-btn black-btn"  data-provide="datepicker" id='datepicker'>
+               	  <input type="text" class="form-control data-br" id='dataBar' placeholder="data" style='display:none'>
+                    <div class="input-group-addon custom-date-btn black-btn">
+               			<span class="glyphicon glyphicon-calendar"></span>
+            		</div>
+         		</div>
+         		</form>
+
+           <ul class='nav navbar-nav navbar-right'>
+
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+
+<script type='text/javascript' src='../scripts/defaults.js'></script>
+<script type='text/javascript' src='../scripts/busca.js'></script>

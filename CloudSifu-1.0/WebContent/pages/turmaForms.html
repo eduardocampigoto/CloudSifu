@@ -1,0 +1,92 @@
+<input type='text' style='display:none;' id='id'>
+<div class='col-sm-12 col-md-12'>
+
+<div class='row'>
+<label>Dados do turma</label></div>
+</div>
+<div class='col-sm-6 col-md-6'>
+ <div class='row'>
+            <div class='input-group'>
+               <span class='input-group-addon ' id='basic-addon1'>Nome</span>
+               <input type='text' class='form-control ' name='nome' title='nome' placeholder='Nome' aria-describedby='basic-addon1' id='nome'>
+            </div>
+  </div>      
+  
+  <div class='row'>
+  <div class='col-sm-4 col-md-4'>
+             <div class='input-group time-select-group' data-toggle='popover' data-placement='bottom'  title='Selecione o horario'>
+               <input type='text' class='form-control time-input hora-minuto' name='horario' placeholder='horario' value='00:00' id='horario' aria-describedby='time-popover'>
+               <span class='input-group-addon time-select-btn'><span class='glyphicon glyphicon-time'></span>
+               </span>
+            </div>
+            </div>
+    <div class='col-sm-2 col-md-2'>        
+            <div class="dropdown">
+  				<button class="btn btn-default dropdown" type="button" id="btDiaSemana" style="width: 200px" data-toggle="dropdown">Dia da semana
+  				</button>
+  				<ul class="dropdown-menu" id="diaSemana">
+    				<li><a>Segunda-feira</a></li>
+    				<li><a>Terça-feira</a></li>
+    				<li><a>Quarta-feira</a></li>
+    				<li><a>Quinta-feira</a></li>
+    				<li><a>Sexta-feira</a></li>
+    				<li><a>Sábado</a></li>
+    				<li><a>Domingo</a></li>
+				</ul>		
+			</div>
+      </div>   </div>
+</div>
+
+
+<div class='col-sm-6 col-md-6'>
+   <div class='row'>
+            <div class='form-group'>
+               <!-- <label for='descricaoId'>Descrição:</label> -->
+               <textarea class='form-control' rows='5' id='descricao' name='descricao'  placeholder='Descrição'></textarea>
+          </div>
+   </div>
+</div>
+
+
+ <div class='col-sm-12 col-md-12'>
+     <div class='row' id='btRow'>
+     <div class='col-sm-8 col-md-8'></div>
+     <div class='col-sm-2 col-md-2'>
+     <button type='button' class='btn btForm btn-warning' id='btEditarTurma' onclick='javascript: editarTurma()' style='display:none;'>Salvar</button>
+     </div>   
+   	 <div class='col-sm-2 col-md-2'>   	
+   	 <button type='button' class='btn btForm btn-default' id='btCancelar' onclick='javascript: carregarPagina("pages/turmaForms.html")' style='display:none;'>Cancelar</button>
+   	 <!--<button type='button' class='btn btForm btn-danger slider' id='btExcluirTurma' onclick='javascript: excluirTurma()' style='display:none;' >Excluir</button> -->
+     <button type='button' class='btn btForm btn-success ' id ='btAdicionarTurma' onclick='javascript: adicionarTurma()'>Adicionar</button>
+    </div>
+
+</div>
+</div>
+
+
+
+
+<div class='col-sm-12 col-md-12'>
+  <h2>Turmas cadastrados</h2>
+  <p></p>            
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Horario</th>
+        <th>Dia da semana</th>
+        <th>Descrição</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id='listaTurmas'>
+     
+    </tbody>
+  </table>
+</div>
+
+
+<script type='text/javascript' src='../scripts/turma.js'></script>
+<script type='text/javascript' src='../scripts/turmaForms.js'></script>
+<script type='text/javascript' src='../scripts/defaults.js'></script>

@@ -1,0 +1,55 @@
+<div class='col-sm-12 col-md-12'>
+		  <input class="form-control dropdown-toggle" id="turmaUsuarioId" type="text" style="display: none">
+		  
+<div class="row">
+   <div class='col-sm-5 col-md-5'>
+      <div class="dropdown">
+		  <input class="form-control dropdown-toggle" placeholder="Buscar Turma" name="turmas" id="buscaTurma" data-toggle="dropdown" type="text">
+		  <ul class="dropdown-menu" role="menu" id="seletorTurma" aria-labelledby="menu1">		  
+		  </ul>
+	  </div>  
+	</div>
+	
+	<div class='col-sm-5 col-md-5'>
+	  <div class="dropdown">
+	    <input class="form-control dropdown-toggle" placeholder="Buscar usuário" name="usuarios" id="buscaUsuario" data-toggle="dropdown" type="text">
+	    <ul class="dropdown-menu" role="menu" id="seletorUsuario" aria-labelledby="menu1">  
+	    </ul>
+	  	</div>
+	</div>    
+	
+   	<div class='col-sm-2 col-md-2 text-center'>
+	    <button type='button' class='btn btn-success' id ='btAdicionarUsuario' onclick='adicionarUsuarioTurma()' disabled>Adicionar Aluno</button>
+    </div>
+</div>
+	
+</div>
+<div class='col-sm-12 col-md-12' style="background-color:#C0C0C0">
+<div class ="col-sm-3 col-md-3" id="dadosTurma" style="display: none">Dados da turma selecionada:</div>
+<div class="col-sm-2 col-md-2" id="idTurma"></div>
+<div class="col-sm-2 col-md-2" id="nomeTurma"></div>
+<div class="col-sm-3 col-md-3" id="diaTurma"></div>
+<div class="col-sm-2 col-md-2" id="horarioTurma"></div>
+</div>
+<div class='col-sm-12 col-md-12' style="background-color:#C0C0C0">
+<div class='col-sm-4 col-md-4' id="descricaoTurma"></div></div>
+<div class='col-sm-12 col-md-12'>
+  <p id="tabDescTurma">Alunos</p>         
+   
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Graduacao</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id='listaUsuarios'>
+     
+    </tbody>
+  </table>
+</div>
+	
+<script type='text/javascript' src='../scripts/turmaUsuario.js'></script>
+<script type='text/javascript' src='../scripts/turmaUsuarioForms.js'></script>

@@ -1,0 +1,62 @@
+
+
+<div class='col-sm-12 col-md-12'>
+<input type='text' style='display:none;' id='turmaId'>
+<input type='text' style='display:none;' id='diarioTurmaId'>
+<input type='text' style='display:none;' id='diarioAlunosId'>
+
+
+   <div class='col-sm-6 col-md-6'>
+   <div class="row"><div class="dropdown">
+	<input class="form-control dropdown-toggle" placeholder="Buscar Turma" name="turmas" id="buscaTurma" data-toggle="dropdown" type="text">
+     <ul class="dropdown-menu" role="menu" id="seletorTurma" aria-labelledby="menu1">
+     </ul>
+    </div></div>
+   </div>
+
+     <div class='col-sm-6 col-md-6'>
+      <div class="row"><div class='input-group date datepicker-br' data-provide='datepicker' id='datepicker'>
+            <input type='text' class='form-control data-br' name='data' id='data' placeholder='data'>
+       <div class='input-group-addon'>
+               <span class='glyphicon glyphicon-calendar'></span>
+            </div>
+         </div>
+      </div>
+	</div>
+    <div class='row'>
+      <div class='form-group'>
+         <!-- <label for='observacoesId'>Observações:</label> -->
+         <textarea class='form-control' rows='5' id='observacoesTurma' name='Observações'  style='resize:none'  placeholder='Observações'></textarea>
+      </div>
+   </div>
+ </div>
+ <div class='col-sm-7 col-md-7'>
+
+ </div>
+  <div class='col-sm-5 col-md-5'>
+  <button type='button' class='btn btForm btn-default' id='btCancelar' onclick='javascript: carregarPagina("../pages/diarioForms.html")' style='display:none;'>Cancelar</button>
+      <button type='button' class='btn btForm btn-success pull-right ' id ='btSalvarDiario' onclick='javascript: salvarDiario()'>Salvar</button>
+   </div>
+<div class='col-sm-12 col-md-12'>
+ <p id="tabDiarioAlunos">Alunos</p>
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Presença</th>
+        <th>Observações</th>
+      </tr>
+    </thead>
+    <tbody id='listaAlunos'>
+
+    </tbody>
+  </table>
+</div>
+<script type='text/javascript' src='../libs/datepicker/js/bootstrap-datepicker.min.js'></script>
+<script type='text/javascript' src='../libs/datepicker/locales/bootstrap-datepicker.pt-BR.min.js'></script>
+<script type='text/javascript' src='../scripts/defaults.js'></script>
+<script type='text/javascript' src='../scripts/diario.js'></script>
+<script type='text/javascript' src='../scripts/diarioForms.js'></script>
+<!-- <script type='text/javascript' src='../scripts/testeDiarioTurma.js'></script>-->

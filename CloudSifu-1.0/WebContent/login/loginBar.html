@@ -1,0 +1,36 @@
+<nav class='navbar navbar-inverse' id='loginBarId'>
+
+    <div class='container-fluid'>
+        <div class='navbar-header'>
+            <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1' aria-expanded='false'>
+                <span class='sr-only'>Toggle navigation</span> <span class='icon-bar'></span> <span class='icon-bar'></span> <span class='icon-bar'></span>
+            </button>
+            <a class='navbar-brand' href='#'>CloudSifu</a>
+        </div>
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
+
+           <!--  <form class='navbar-form navbar-left'>
+
+         		</form> -->
+         		<br>
+				<form class="navbar-right" id="loginId" method="POST">
+					<input class="loginInput" type="text" id="usuarioId" name="usuario" placeholder="Usuario">
+					<input class="loginInput" type="password" id="senhaInput"  placeholder="Senha">
+					<input class="loginInput" type="password" id="senhaId" name="senha" style="display: none">
+					<a class="btn btn-danger" type="button" id="btLoginId" onclick="javascript: login();">Entrar</a>
+				</form><br>
+
+            <ul class='nav navbar-nav navbar-right'>
+
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+
+<script type='text/javascript' src='scripts/login.js'></script>

@@ -1,0 +1,49 @@
+ <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" data-target=".logradouro-collapse" id='tlogradouro'>Tipo de logradouro
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">      
+				<li><a class="collapse logradouro-collapse" id="1">Aeroporto</a></li>
+				<li><a class="collapse logradouro-collapse" id="2">Alameda</a></li>
+				<li><a class="collapse logradouro-collapse" id="3">Área</a></li>
+				<li><a class="collapse logradouro-collapse" id="4">Avenida</a></li>
+				<li><a class="collapse logradouro-collapse" id="5">Campo</a></li>
+				<li><a class="collapse logradouro-collapse" id="6">Chácara</a></li>
+				<li><a class="collapse logradouro-collapse" id="7">Colônia</a></li>
+				<li><a class="collapse logradouro-collapse" id="8">Condomínio</a></li>
+				<li><a class="collapse logradouro-collapse" id="9">Conjunto</a></li>
+				<li><a class="collapse logradouro-collapse" id="10">Distrito</a></li>
+				<li><a class="collapse logradouro-collapse" id="11">Esplanada</a></li>
+				<li><a class="collapse logradouro-collapse" id="12">Estação</a></li>
+				<li><a class="collapse logradouro-collapse" id="13">Estrada</a></li>
+				<li><a class="collapse logradouro-collapse" id="14">Favela</a></li>
+				<li><a class="collapse logradouro-collapse" id="15">Feira</a></li>
+				<li><a class="collapse logradouro-collapse" id="16">Jardim</a></li>
+				<li><a class="collapse logradouro-collapse" id="17">Ladeira</a></li>
+				<li><a class="collapse logradouro-collapse" id="18">Lago</a></li>
+				<li><a class="collapse logradouro-collapse" id="19">Lagoa</a></li>
+				<li><a class="collapse logradouro-collapse" id="20">Largo</a></li>
+				<li><a class="collapse logradouro-collapse" id="21">Loteamento</a></li>
+				<li><a class="collapse logradouro-collapse" id="22">Morro</a></li>
+				<li><a class="collapse logradouro-collapse" id="23">Núcleo</a></li>
+				<li><a class="collapse logradouro-collapse" id="24">Parque</a></li>
+				<li><a class="collapse logradouro-collapse" id="25">Passarela</a></li>
+				<li><a class="collapse logradouro-collapse" id="26">Pátio</a></li>
+				<li><a class="collapse logradouro-collapse" id="27">Praça</a></li>
+				<li><a class="collapse logradouro-collapse" id="28">Quadra</a></li>
+				<li><a class="collapse logradouro-collapse" id="29">Recanto</a></li>
+				<li><a class="collapse logradouro-collapse" id="30">Residencial</a></li>
+				<li><a class="collapse logradouro-collapse" id="31">Rodovia</a></li>
+				<li><a class="collapse logradouro-collapse" id="32">Rua</a></li>
+				<li><a class="collapse logradouro-collapse" id="33">Setor</a></li>
+				<li><a class="collapse logradouro-collapse" id="34">Sítio</a></li>
+				<li><a class="collapse logradouro-collapse" id="35">Travessa</a></li>
+				<li><a class="collapse logradouro-collapse" id="36">Trecho</a></li>
+				<li><a class="collapse logradouro-collapse" id="37">Trevo</a></li>
+				<li><a class="collapse logradouro-collapse" id="38">Vale</a></li>
+				<li><a class="collapse logradouro-collapse" id="39">Vereda</a></li>
+				<li><a class="collapse logradouro-collapse" id="40">Via</a></li>
+				<li><a class="collapse logradouro-collapse" id="41">Viaduto</a></li>
+				<li><a class="collapse logradouro-collapse" id="42">Viela</a></li>
+				<li><a class="collapse logradouro-collapse" id="43">Vila.</a></li>
+		     </ul>
+</div>
